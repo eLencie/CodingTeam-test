@@ -2,12 +2,6 @@ from rest_framework import serializers
 from restaurant.models import Food, FoodCategory, Topping
 
 
-class ToppingSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Topping
-        fields = ['name']
-
-
 class FoodSerializer(serializers.ModelSerializer):
     toppings = serializers.StringRelatedField(many=True)
 
