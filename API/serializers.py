@@ -9,10 +9,7 @@ class ToppingSerializer(serializers.ModelSerializer):
 
 
 class FoodSerializer(serializers.ModelSerializer):
-    toppings = serializers.SerializerMethodField()
-
-    def get_toppings(self, obj):
-        return list(topping.name for topping in obj.toppings.all())
+    toppings = serializers.StringRelatedField(many=True)
 
     class Meta:
         model = Food
