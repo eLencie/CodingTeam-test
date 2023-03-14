@@ -2,7 +2,7 @@
 
 ## Endpoints
 <a href='http://127.0.0.1:8000/api/categories/'>/api/categories/</a> - эндпоинт, который вернёт все блюда, у которых is_publish=True, сгруппированные по категориям<br>
-<a href='http://127.0.0.1:8000/api/food-list/'>/api/food-list/</a> - эндпоинт, который вернёт все блюда, у которых is_publish=True, с возможностью фильтрации по is_vegan, is_special, [topping.name, …]
+<a href='http://127.0.0.1:8000/api/food-filter/'>/api/food-filter/</a> - эндпоинт, который вернёт все блюда, у которых is_publish=True, с возможностью фильтрации по is_vegan, is_special, [topping.name, …]
 
 ## Структура проекта
 - Django
